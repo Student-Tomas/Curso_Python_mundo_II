@@ -1,4 +1,17 @@
 # Desafio 039: alistamento militar de acordo com o ano de nascimento
+from sys import exit
+sexo = str(input('''Escolha uma das opções de sexo abaixo:  
+[ M ] para MULHER
+[ H ] para HOMEM
+Resp: '''))
+if sexo.upper() == "M":
+    print('Você não precisar se alistar')
+    exit()
+elif sexo.upper() == "H":
+    print('Responda a questão abaixo:')
+else:
+    print('Opção inválida')
+    exit()
 ano_nasc = int(input('Qual o seu ano de nascimento? '))
 from datetime import date
 ano_atual = date.today().year
