@@ -13,5 +13,5 @@ if total == 2:
 elif total == 1:
     print('\n\033[mThe number {} was divided only {} time, then it is NOT PRIME'.format(num, total))
 else:
-    print('\n\033[mThe number {} was divided {} times, then it is PRIME'.format(num, total))
+    print('\n\033[mThe number {} was divided {} times, then it is NOT PRIME'.format(num, total))
 
