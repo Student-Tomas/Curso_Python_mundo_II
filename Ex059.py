@@ -3,7 +3,7 @@ from time import sleep
 num1 = int(input("first number: "))
 num2 = int(input("Second number: "))
 option = 0
-while option != 5:
+while option != "5":
     option = str(input('''
     [1] sum
     [2] multiplication
@@ -36,5 +36,4 @@ while option != 5:
         print('Program finished.')
     elif option not in "12345":
         print('Invalid option. Please, choose a valid option.')
-    else:
-        print()
+
