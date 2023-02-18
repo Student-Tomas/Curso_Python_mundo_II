@@ -1,4 +1,4 @@
-# Challenge 062? Emprrove the ex 061 including a option for the user to ask for mor terms, until the user give up.
+# Challenge 062? Improve the ex 061 including a option for the user to ask for mor terms, until the user give up.
 first_term = int(input("Say a number to be the first term of the AP: "))
 terms = int(input("Say the initial number of terms: "))
 ratio = int(input("Enter the AP's ratio: "))
