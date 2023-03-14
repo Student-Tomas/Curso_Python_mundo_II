@@ -3,16 +3,16 @@ values = []
 for value in range(0, 5):
     values.append(int(input('Say a number: ')))
 print(values)
-print(f'The greatest value is {max(values)} and it is in position',end=" ")
+print(f'The greatest value is {max(values)} and it is in position', end=" ")
 great = max(values)
 for i, v in enumerate(values):
     if v == great:
         print(f'{i+1} ...',end=" ")
-print(f'\nThe smallest value is {min(values)} and it is in position',end=" ")
+print(f'\nThe smallest value is {min(values)} and it is in position', end=" ")
 small = min(values)
 for i, v in enumerate(values):
     if v == small:
-        print(f'{i+1} ...',end=" ")
+        print(f'{i+1} ...', end=" ")
 
 
 
