@@ -1,16 +1,21 @@
 # Challenge number 080: create a program that receive five numbers from the user and put them in a ordered list, without using "sort()"
-list = []
-greater = 0
-smaller = 0
+list = list()
 for i in range(0, 5):
     num = int(input('Say a number: '))
-    list.append(num)
-    ask = str(input('Do you want to continue? [Y/N] ')).strip().upper()
-    if ask not in 'YN':
-        print('=='*30)
-        print('Invalid answer. Please try again.')
-        print('==' * 30)
-    if ask == 'N':
-        print('Good bye!!!')
-        break
+    if i == 0:
+        list.append(num)
+        print('Number inserted in the first position')
+    elif num > list[-1]:
+        list.append(num)
+        print('Number inserted in the last position')
+    else:
+        pos = 0
+        while pos < len(list):
+            if num <= list[pos]:
+                list.insert(pos, num)
+                print(f'Number inserted in the {pos} position')
+                break
+            pos += 1
 print(list)
+
+
